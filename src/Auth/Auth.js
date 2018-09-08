@@ -1,12 +1,13 @@
 import auth0 from 'auth0-js';
+import vars from '../auth-config/auth-config.js.example'
 
 class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
       // the following three lines MUST be updated
-      domain: '<YOUR_AUTH0_DOMAIN>',
-      audience: 'https://<YOUR_AUTH0_DOMAIN>/userinfo',
-      clientID: '<YOUR_AUTH0_CLIENT_ID>',
+      domain: vars.domain,
+      audience: `https://${vars.domain}/userinfo`,
+      clientID: vars.id,
       redirectUri: 'http://localhost:3000/callback',
       responseType: 'token id_token',
       scope: 'openid profile'

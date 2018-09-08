@@ -1,0 +1,6 @@
+const vars = {
+    domain: '<DOMAIN>',
+    id: '<ID>'
+}
+
+export default vars
