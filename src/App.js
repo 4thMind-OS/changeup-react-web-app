@@ -6,8 +6,7 @@ import Callback from './Callback'
 import auth0Client from './Auth/Auth'
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-import { Query } from "react-apollo";
-import gql from "graphql-tag";
+import UserCard from 'changeup-component-lib/dist/Usrcard';
 
 const client = new ApolloClient({
   uri: "http://localhost:4000/"
