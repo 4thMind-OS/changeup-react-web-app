@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {withRouter, Route} from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Navbar from './Navbar/Navbar'
 import Callback from './Callback'
 import auth0Client from './Auth/Auth'
